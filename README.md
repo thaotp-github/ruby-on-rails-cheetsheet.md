@@ -1,13 +1,20 @@
-## Ruby on Rails Cheatsheet (5.1)
+## Ruby on Rails Cheatsheet
 ### Create a new application
 ```
 $ bin/rails version new my_app --database=database_engine
 ```
 ex:
-
 ```
 $ bin/rails _5.2.1_ new my_app --database=postgresql
 ```
+#### Scaffold
+```
+$ bin/rails generate scaffold NAME [field[:type][:index] field[:type][:index]] [options]
+```
+ex: `$ bin/rails generate scaffold User name:string mail:string`
+##### scaffold_controller
+`$ bin/rails generate scaffold_controller NAME [options]`
+
 ### Database Commands
 
 `$ bin/rails db:create`
